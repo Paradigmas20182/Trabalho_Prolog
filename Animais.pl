@@ -6,8 +6,16 @@ is_true(Q) :-
         format("~w?\n", [Q]),
         read(sim).
 
-mamiferos() :- is_true('quando esta feliz, ele balança o rabo'), is_true('late'), write('O animal que vc está pensando é: Cachorro.').
-mamiferos() :- is_true('mia'), is_true('quando pula, cai em pé'), write('O animal que vc está pensando é: Gato.').
+
+mamiferos() :- is_true('é menor que uma maquina de lavar roupas?'), mamiferos_menores().
+mamiferos_menores() :- is_true('é conhecido como o melhor amigo do homem'), is_true('late'), write('O animal que vc está pensando é: Cachorro.').
+mamiferos_menores() :- is_true('mia'), is_true('quando pula, cai em pé'), write('O animal que vc está pensando é: Gato.').
+mamiferos_menores() :- is_true('É famoso por participar em experimentos de laboratório'), is_true('Gosta de queijo'), write('O animal que vc está pensando é: Rato.').
+mamiferos_menores() :- is_true('Tem pata parecida com de patos'), is_true('Tem uma estrutura semelhante a um bico?'), is_true('É um personagem do phineas e ferb'), write('O animal que vc está pensando é: Ornitorrinco.').
+mamiferos_menores() :- is_true('Voa'), is_true('Gosta de Sangue'), is_true('O Batman teve trauma desse animal quando criança'), write('O animal que vc está pensando é: Morcego.').
+
+
+mamiferos_menores() :- write('Parabéns, você me venceu!! Até a próxima.'), halt(0). 
 
 repteis() :- is_true('é pequeno'), is_true('anda na parede'), write('O animal que vc está pensando é: Lagartixa.').
 repteis() :- is_true('é grade'), is_true('vive nas margens de rios'), write('O animal que vc está pensando é: Crocodilo.').
