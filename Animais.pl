@@ -28,8 +28,23 @@ mamiferos_menores() :- is_true('Possui polegar'), is_true('Gosta de comer banana
 mamiferos_menores() :- is_true('É famoso por ser o protogonista do desenho Peppa Pig'), is_true('A figura desse animal é comumente usado como cofres'), write('O animal que vc está pensando é: Porco.').
 mamiferos_menores() :- write('Parabéns, você me venceu!! Até a próxima.'), halt(0).
 
+peixes() :- is_true('É mamífero'), mamiferos_aquatico().
+peixes() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Tubarão').
 peixes() :- is_true('Vive nos mares'), peixes_salgado().
+peixes() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Piranha').
+peixes() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Dourado').
+peixes() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Enguia').
+
+mamiferos_aquatico() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Baleia').
+mamiferos_aquatico() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Golfinho').
+mamiferos_aquatico() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Foca').
+
 peixes_salgado() :- is_true('Possui filamentos que lembram a crina de um cavalo'), is_true('O macho que faz a gestação'), is_true('Nadam com o corpo na vertical'),write('O animal que vc está pensando é: Cavalo-Marinho.').
+peixes_salgado() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Estrela do Mar').
+peixes_salgado() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Peixe Espada').
+peixes_salgado() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Água Viva').
+peixes_salgado() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Bacalhau').
+peixes_salgado() :- is_true(''), is_true(''), write('O animal que vc está pensando é: Salmão').
 
 repteis() :- is_true('É pequeno'), is_true('Anda na parede'), write('O animal que vc está pensando é: Lagartixa.').
 repteis() :- is_true('É grade'), is_true('Vive nas margens de rios'), write('O animal que vc está pensando é: Crocodilo.').
@@ -47,3 +62,5 @@ anfibios() :- is_true('É conhecido por não lavar o pé'), write('O animal que 
 anfibios() :- is_true('Vive em ambientes com lagoas'),is_true('É conhecida por ser semelhante á um sapo'), write('O animal que vc está pensando é: Rã').
 anfibios() :- is_true('Rasteja'), write('O animal que vc está pensando é: Cobra cega').
 anfibios() :- is_true('Possui calda'), write('O animal que vc está pensando é: Salamandra').
+
+% mamiferos() :- is_true(''), is_true(''), write('O animal que vc está pensando é:').
