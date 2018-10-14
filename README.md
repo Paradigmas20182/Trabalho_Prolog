@@ -11,7 +11,6 @@ Instale o ambiente prolog em http://www.swi-prolog.org/download/stable
 
 	- Clone o projeto em sua máquina;
 	- Entre na pasta onde está o presente projeto usando o Terminal;
-	- Insira o comando $ 
-	- $ 
-	- $ 
+	- Insira o comando $ prolog Animais.pl
+	- ?- start.
 	- Após isso, é só seguir as instruções do Programa
