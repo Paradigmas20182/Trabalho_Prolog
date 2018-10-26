@@ -29,7 +29,7 @@ end() :-
 
 animal()  :- is_true('Tem pelo'), is_true('Tem glandulas mamarias'), mamiferos().
 animal()  :- is_true('Tem pele grossa e escamosa'), is_true('Põe ovos'), repteis().
-animal()  :- is_true('Tem bico'), is_true('Tem pena'), aves().
+animal()  :- is_true('O animal tem bico'), is_true('Tem pena'), aves().
 animal()  :- is_true('É um animal aquático'), peixes().
 animal()  :- is_true('Tem pele úmida'), is_true('Vivem uma parte de sua vida na água e uma parte na terra'), anfibios().
 animal() :- end().
